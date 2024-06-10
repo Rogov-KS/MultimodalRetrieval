@@ -1,0 +1,5 @@
+outs:
+- md5: 5fe777a0db623f2e9e6120df030ddc89
+  size: 94253
+  hash: md5
+  path: textIndex.bin
