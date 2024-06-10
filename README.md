@@ -7,3 +7,11 @@
 2) Надо накатить измения на эту БД с помощью alembic
 
 3) Для бекэнда установить виртуальную среду, соотвествующую файлу по пути `end2end_proj/backend/requirements.txt`
+
+4) Для фронта установить все необходимые библиотеки, соответствующие файлу `end2end_proj/frontend/package.json`
+
+Запуск:
+
+- Для запуска backend сервера запустить команду `uvicorn main:app`, находясь в папке `end2end_proj/backend`
+
+- Для запуска frontend сервера запустить команду `npm start`, находясь в папке `end2end_proj/frontend`
