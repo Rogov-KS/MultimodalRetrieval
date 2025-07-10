@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "multimodal-retrival-repo"
+version = "0.1.0"
+description = "multimodal retrieval repository for image and text search"
+authors = ["Sardor Lutfullaev <lutfullaev.si@phystech.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torchvision = "0.17.1"
+torch = "2.2.1"
+tqdm = "4.66.2"
+faiss-cpu = "1.8.0"
+clip = {git = "https://github.com/openai/CLIP.git"}
+numpy = "1.26.4"
+datasets = "2.18.0"
+dvc = {extras = ["gdrive"], version = "^3.50.1"}
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+
+[tool.black]
+line-length = 90
+target-version = ["py311"]
+
+[tool.flake8]
+max-line-length = 90
+
+[tool.isort]
+src_paths = ["metricCalc", "retrieval"]
+profile = "black"
+line_length = 90
+lines_after_imports = 2
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

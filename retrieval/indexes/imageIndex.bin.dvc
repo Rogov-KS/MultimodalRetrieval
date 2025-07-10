@@ -1,0 +1,5 @@
+outs:
+- md5: 095c644b7975a97a8c3c61be05e38ede
+  size: 93435949
+  hash: md5
+  path: imageIndex.bin
